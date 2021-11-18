@@ -1,124 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!--Main page html files have 2 sections, the head and the body. The head is more or less
-    seting up background information for the website-->
-
 <head>
   <meta charset="utf-8">
-  <!--The "title" element will give this website it's title(it can be seen in the actual tab)-->
-  <title>Jorge Martinez's Personal Site</title>
+  <title>Jorge Martinez</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
 </head>
 
-<!--The body actually hosts the UI information-->
-
 <body>
-  <table cellspacing="10">
-    <tr>
-      <!--The "a" element is called the anchor element, it will link another website to a specific text/image-->
-      <!--The "img" element allows us to add an image to the website, using the different attributes such as "width"
-          and "height" will allow us to modify this image (more specifically to allow this image to fit inside the website)-->
-      <td><a href="https://www.linkedin.com/in/jorge-martinez-a90b0b131/"><img src="images/IMG_5485.jpeg" width="275" height="400" alt="Jorge profile picture"></a></td>
-      <td>
-        <h1>Jorge A Martinez</h1>
-        <!--The "em" element gives the specific text an importance and italicizes the text-->
-        <p><em>Software Engineer</em>
-          <!--The "br" element gives us a new line break (new line)-->
-          <br><em>RF Site Team</em>
-          <!--The "strong" element gives the specific text an importance and bolds the text-->
-          <br><strong><a href="https://www.motorolasolutions.com/en_us.html">Motorola Solutions</a></strong>
-          <br><em>Schaumburg, IL 60196</em>
-        </p>
-        <p>I'm currently a Software Engineer at Motorola solutions working in the Repeater Software team. I develop,
-          build, test and design virtualized applications for next generation radio communication systems. We integrate
-          these C++ applications into docker containers running on a virtualized server.</p>
-      </td>
-    </tr>
-  </table>
-  <!--The "hr" is the horizontal rule element, this will allow us to draw a line at this point in the page-->
-  <hr size="5" noshade>
+  <div class="top-container">
+    <img class="top-cloud" src="./images/cloud.png" alt="cloud-img">
+    <h1>I'm Jorge.</h1>
+    <h2>a Software Engineer.</h2>
+    <img class="bottom-cloud" src="./images/cloud.png" alt="cloud-img">
+    <img src="./images/mountain.png" alt="mountain-img">
+  </div>
+  <div class="middle-container">
+    <div class="Profile">
+      <a href="https://www.linkedin.com/in/jorge-martinez-a90b0b131/"><img class="headshot" src="./images/IMG_5485.jpeg" alt=""></a>
+      <h2>Hello.</h2>
+      <p class="biography">My name is Jorge Martinez and I'm currently a Software Engineer at Motorola Solutions.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="programming-skill">
+        <img class="c-image" src="./images/c.png" alt="">
+        <h3>C++</h3>
+        <p>My strongest programming language is C++. I currently do both, development and testing in C++.</p>
+      </div>
+      <div class="presentation-skill">
+        <img class="presentation-image" src="./images/presentation.png" alt="">
+        <h3>Presentation</h3>
+        <p>Another strong skill I possess is the ability to communicate clearly. I also really enjoy giving presentations to help others better understand a topic.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Jorge Martinez</h3>
+      <p class="contact-message">Please feel free to contact me for any further questions!</p>
+      <a class="btn" href="mailto:Jamartinez3255@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
 
-  <h3>Education</h3>
-  <!--The "ul"(unordered list) element structures us to provide an unordered list of elements-->
-  <ul>
-    <!--The "li"(list item) element allows us to list a specific item-->
-    <li><strong>University of Illinois at Chicago</strong>
-      <br><em>B.S. in Electrical Engineering</em>
-      <br>Sept '12 - Dec '16
-    </li>
-  </ul>
-
-  <hr size="5" noshade>
-
-  <h3>Work Experience</h3>
-  <!--The "table" element allows us to create a table for grouping some data together(this looks very 90s - now we use css)-->
-  <table border="1" cellspacing="10">
-    <!--The "thead" element allows us to create a special header row to give categories to the different columns-->
-    <thead>
-      <!--The "th"(table header cell) element works specifically with the "thead" element to allow us to specify the column names-->
-      <th>Dates</th>
-      <th>Work</th>
-    </thead>
-    <!--The "tbody" element provides structure for the body of the table-->
-    <tbody>
-      <!--The "tr"(table row) element allows us to create a row in the table-->
-      <tr>
-        <!--The "td"(table cell) element allows us to create a row in the table-->
-        <td>2017 - 2018</td>
-        <td>Product Development Engineer at <a href="https://www.navistar.com/"><strong>Navistar International</strong></a></td>
-      </tr>
-      <tr>
-        <td>2018 - Current</td>
-        <td>Software Engineer at <a href="https://www.motorolasolutions.com/en_us.html"><strong>Motorola Solutions</strong></a></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr size="5" noshade>
-
-  <h3>Skills</h3>
-  <table border="1" cellspacing="10">
-    <tbody>
-      <tr>
-        <td>
-          <table>
-            <tbody>
-              <tr>
-                <td>C++</td>
-                <td>⭐️⭐️⭐️⭐️</td>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td>⭐️⭐️</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-        <td>
-          <table>
-            <tbody>
-              <tr>
-                <td>Docker</td>
-                <td>⭐️⭐️⭐️</td>
-              </tr>
-              <tr>
-                <td>Communication</td>
-                <td>⭐️⭐️⭐️⭐️</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr size="5" noshade>
-  <!--Here we're using the anchor element to provide a HyperLink to a different page within the same website.
-      This new page will be the "My Hobbies" page, where I will list out my hobbies. A very similar action is
-      happening with the "Contact Me" page-->
-  <a href="hobbies.html">My Hobbies</a>
-  <br><a href="contact.html">Contact Me</a>
-
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/jorge-martinez-a90b0b131/">LinkedIn</a>
+    <p class="copyright-name">© 2021 Jorge Martinez.</p>
+  </div>
 </body>
 
 </html>
